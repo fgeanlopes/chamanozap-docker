@@ -1,0 +1,39 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,600;1,300,400&display=swap');
+body,html{font-family: 'Montserrat', sans-serif; font-weight: 300; background-color: black;overflow-x:hidden}
+*{margin:0;padding:0}
+li,ol,ul{list-style:none}
+a,a:hover{text-decoration:none}
+a,p,span,input{font-size:18px}
+:after,:before{-webkit-box-sizing:border-box;-moz-box-sizing:border-box;box-sizing:border-box}
+button:focus,input:focus,p:focus,span:focus{border-color:transparent;box-shadow:none;outline:0}
+:root{--verde: #29ad48; --verdeHover:#217635;}
+h2{text-align: center; position: relative; font-size: 50px;color:white; margin-bottom: 100px;}
+h2:after{content: '';position: absolute; bottom: -25px; left: 50%; transform: translateX(-50%); background-color:#76FE36; width: 150px; height: 4px;}
+
+@keyframes arrow { 0% {left: 0;} 50% {left: 10px;} 100% {left: 0;}}
+@keyframes draw {from {stroke-linecap: round;}to {stroke-linecap: round;stroke-dashoffset: 0;}}
+@media(max-width:768px) { .home .content{padding-bottom: 20vh;}}
+
+.none{display: none;}
+.button{cursor: pointer; text-align: center;border-radius: 5px;padding: 10px 30px;background-color: var(--verde);color:white}
+.button:hover{transition: all 0.3s;background: var(--verdeHover);}
+
+.home{background-color: rebeccapurple; background-repeat: no-repeat; background-size: cover; height: 100vh; min-height: 600px; display: flex; align-items: center; justify-content: center; flex-direction: column;}
+.home .content{width: 80%; margin: 0 auto; display: flex; flex-direction: column; align-items: center;}
+.home .content_number{max-width: 430px; position: relative; width: 100%;display: flex;justify-content: center;}
+.home .content_number input{width: 100%;margin:45px 0 25px 0;border:none;padding:15px;border-radius:5px;color:#f5f5f5;background:rgba(0,0,0,.35);text-align:center}
+.home .content_number input::placeholder{color:white;}
+.home .content_number svg{width:20px;overflow: visible;}
+.home .content_number .check{position: absolute; top: 60px; right: 15px;}
+.home .content_number .check path{fill:none;stroke:#2aba66;stroke-miterlimit:10;stroke-width:10px;margin:40px;stroke-dasharray:500;stroke-dashoffset:500;animation:draw .5s linear forwards}
+
+.home .btn_chamar{ padding: 15px 0px;width: 100%;max-width: 430px; display: flex;align-items: center;justify-content: center;}
+.home .btn_chamar p{font-size: 20px;}
+.home .btn_chamar svg{position: relative; margin-left: 10px; animation:arrow .5s linear infinite}
+
+.info .rede_social{position: fixed;bottom: 0r;bottom: 15px;right: 15px;display: grid;grid-template-columns: 1fr 1fr 1fr;gap: 10px;}
+.info .rede_social a{text-align: center;}
+.info .rede_social a:hover p{opacity: 1;}
+.info .rede_social a p{opacity: .7; color: #fff; font-size: 15px;}
+
+.info .version{font-size: 12px; opacity: .7; color: #fff; position:fixed; bottom: 15px; left: 15px;}

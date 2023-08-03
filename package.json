@@ -1,0 +1,24 @@
+{
+  "name": "chamanozap",
+  "version": "4.0.0",
+  "private": true,
+  "scripts": {
+    "dev": "next dev",
+    "build": "next build",
+    "start": "next start"
+  },
+  "dependencies": {
+    "@next/bundle-analyzer": "^11.0.1",
+    "axios": "^0.21.1",
+    "firebase": "^8.7.0",
+    "next": "^12.1.4",
+    "next-compose-plugins": "^2.2.1",
+    "react": "18.0.0",
+    "react-dom": "18.0.0"
+  },
+  "browser": {
+    "fs": false,
+    "path": false,
+    "os": false
+  }
+}
