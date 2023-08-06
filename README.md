@@ -1,6 +1,5 @@
 <h2> ⚡ Sobre o projeto</h2>
-<p>Chama no zap é uma aplicação possibilita chamar pessoas <br> e empresas no WhatsApp, sem a necessidade de salvar o número do contato.</p>
-
+<p>Chama no zap é uma aplicação que facilita enviar mensagens para outras pessoas <br> ou empresas no WhatsApp, sem a necessidade de salvar o número número do contato</p>
 <br>
 <br>
 
